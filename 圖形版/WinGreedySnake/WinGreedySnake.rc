@@ -1,0 +1,127 @@
+// Microsoft Visual C++ 產生的資源指令碼。
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// 已從 TEXTINCLUDE 2 資源產生。
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#pragma code_page(950)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 圖示
+//
+
+// 先放置有最低 ID 的圖示，確保應用程式圖示在所有系統上保持一致。
+
+IDI_WINGREEDYSNAKE       ICON         "WinGreedySnake.ico"
+IDI_SMALL               ICON         "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 功能表
+//
+
+IDC_WINGREEDYSNAKE MENU 
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "結束(&X)",                IDM_EXIT
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於(&A) ...",           IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 對應鍵
+//
+
+IDC_WINGREEDYSNAKE ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 對話方塊
+//
+
+IDD_ABOUTBOX DIALOG   22, 17, 230, 75
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "關於"
+FONT 9, "System"
+BEGIN
+    ICON            IDI_WINGREEDYSNAKE,IDC_MYICON,14,9,16,16
+    LTEXT           "WinGreedySnake Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "確定",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+1 TEXTINCLUDE  
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 字串資料表
+//
+
+STRINGTABLE  
+BEGIN
+   IDC_WINGREEDYSNAKE   "WINGREEDYSNAKE"
+   IDS_APP_TITLE       "WinGreedySnake"
+END
+
+#endif
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// 已從 TEXTINCLUDE 3 資源產生。
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // 非 APSTUDIO_INVOKED

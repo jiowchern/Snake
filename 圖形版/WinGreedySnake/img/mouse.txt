@@ -1,0 +1,1 @@
+50,50,4,egg1.bmp,200,egg2.bmp,210,egg3.bmp,3220,egg4.bmp,230,
