@@ -2,9 +2,7 @@
 
 JCCounter::JCCounter(void)
 {
-	const int const a = 10;	
-	const int* p2 = &a;
-	int* const p3 = &a;
+
 
 	LintEnd.QuadPart=0;
 	bBegin=false;
